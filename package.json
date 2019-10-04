@@ -1,0 +1,120 @@
+{
+  "_from": "git+https://github.com/react-native-training/react-native-elements.git",
+  "_id": "react-native-elements@1.0.0-beta5",
+  "_inBundle": false,
+  "_location": "/react-native-elements",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/react-native-training/react-native-elements",
+    "rawSpec": "https://github.com/react-native-training/react-native-elements",
+    "saveSpec": "git+https://github.com/react-native-training/react-native-elements.git",
+    "fetchSpec": "https://github.com/react-native-training/react-native-elements.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/react-native-training/react-native-elements.git#2f54bb14edea32d438873e6a5480a294319a6658",
+  "_spec": "https://github.com/react-native-training/react-native-elements",
+  "_where": "/Users/diksonsamuel/Projects/Beam",
+  "author": {
+    "name": "Nader Dabit & Monte Thakkar"
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-training/react-native-elements/issues"
+  },
+  "bundleDependencies": false,
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-native-elements",
+    "logo": "https://opencollective.com/react-native-elements/logo.txt"
+  },
+  "dependencies": {
+    "lodash.isempty": "^4.4.0",
+    "lodash.times": "^4.3.2",
+    "opencollective": "^1.0.3",
+    "prop-types": "^15.5.8",
+    "react-native-touchable-scale": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "React Native Elements & UI Toolkit",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-react-native": "^1.9.1",
+    "codecov": "^2.1.0",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.0",
+    "eslint": "^3.17.1",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react-native": "^2.3.1",
+    "file-loader": "^0.11.1",
+    "husky": "^0.13.3",
+    "image-webpack-loader": "^3.3.1",
+    "jest": "22.1.4",
+    "lint-staged": "^3.4.0",
+    "prettier": "^1.10.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-native": "0.52.2",
+    "react-native-vector-icons": "^4.4.2",
+    "react-test-renderer": "16.2.0",
+    "webpack": "^2.2.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "homepage": "https://github.com/react-native-training/react-native-elements#readme",
+  "jest": {
+    "preset": "react-native",
+    "coverageDirectory": "./coverage/",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/helpers/*.js"
+    ],
+    "collectCoverage": true,
+    "globals": {
+      "__DEV__": true
+    }
+  },
+  "keywords": [
+    "react-native",
+    "reactjs",
+    "reactnative",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --single-quote --trailing-comma es5 --write",
+      "git add"
+    ]
+  },
+  "main": "src/index.js",
+  "name": "react-native-elements",
+  "peerDependencies": {
+    "react-native-vector-icons": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-training/react-native-elements.git"
+  },
+  "scripts": {
+    "build": "rm -rf build; webpack",
+    "lint": "eslint src/",
+    "postinstall": "opencollective postinstall",
+    "precommit": "lint-staged && npm test",
+    "prettify": "prettier --write 'src/**/*.js'",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "types": "src/index.d.ts",
+  "version": "1.0.0-beta5"
+}
